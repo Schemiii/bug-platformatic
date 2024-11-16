@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schemas.platformatic.dev/@platformatic/service/2.11.0.json",
+  "service": {
+    "openapi": true
+  },
+  "watch": true,
+  "plugins": {
+    "paths": [
+      {
+        "path": "./plugins",
+        "encapsulate": false,
+        "options": {
+          "apiKeyOpenAi": "{PLT_NODE_ENRICHER_APIKEY_OPENAI}"
+        }
+      },
+      "./routes"
+    ],
+    "typescript": "{PLT_NODE_ENRICHER_TYPESCRIPT}"
+  },
+  "clients": [
+    {
+      "schema": "node-db/node-db.openapi.json",
+      "name": "nodeDb",
+      "type": "openapi",
+      "serviceId": "node-db"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schemas.platformatic.dev/@platformatic/composer/2.11.0.json",
+  "composer": {
+    "services": [
+      {
+        "id": "node-db",
+        "openapi": {
+          "url": "/documentation/json"
+        }
+      },
+      {
+        "id": "node-enricher",
+        "openapi": {
+          "url": "/documentation/json"
+        }
+      }
+    ],
+    "refreshTimeout": 1000
+  },
+  "watch": true
+}
+

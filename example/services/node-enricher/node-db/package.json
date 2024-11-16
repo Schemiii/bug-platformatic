@@ -1,0 +1,4 @@
+{
+  "name": "node-db",
+  "types": "./node-db.d.ts"
+}
