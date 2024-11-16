@@ -1,0 +1,16 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import { setBaseUrl, importDbGetFile, importDbGetFileExtraction } from "../api/api.ts";
+setBaseUrl("http://localhost:3042");
+const items = await importDbGetFile({})
+const foo = await importDbGetFileExtraction({})
+---
+
+<Layout title="Welcome to Astro.">
+  <ul>
+  {items.map((item) => (
+    <li>{item}</li>
+  ))}
+</Layout>
+

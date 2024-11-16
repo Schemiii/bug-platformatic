@@ -1,0 +1,34 @@
+{
+  "$schema": "https://schemas.platformatic.dev/@platformatic/db/2.14.0.json",
+  "db": {
+    "connectionString": "{PLT_FEIGNED_KNIFE_DATABASE_URL}",
+    "graphql": true,
+    "openapi": true,
+    "schemalock": true
+  },
+  "watch": {
+    "ignore": [
+      "*.sqlite",
+      "*.sqlite-journal"
+    ]
+  },
+  "migrations": {
+    "dir": "migrations",
+    "autoApply": "{PLT_FEIGNED_KNIFE_APPLY_MIGRATIONS}"
+  },
+  "plugins": {
+    "paths": [
+      {
+        "path": "./plugins",
+        "encapsulate": false
+      },
+      {
+        "path": "./routes"
+      }
+    ],
+    "typescript": "{PLT_FEIGNED_KNIFE_TYPESCRIPT}"
+  },
+  "types": {
+    "autogenerate": true
+  }
+}

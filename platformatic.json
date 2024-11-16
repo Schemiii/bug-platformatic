@@ -1,6 +1,6 @@
 {
   "$schema": "https://schemas.platformatic.dev/@platformatic/runtime/2.14.0.json",
-  "entrypoint": "ratty-sloth",
+  "entrypoint": "composer",
   "watch": true,
   "autoload": {
     "path": "services",

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schemas.platformatic.dev/@platformatic/composer/2.14.0.json",
+  "composer": {
+    "services": [
+      {
+        "id": "fair-db",
+        "openapi": {
+          "url": "/documentation/json",
+          "prefix": "/fair-db"
+        }
+      },
+      {
+        "id": "import-db",
+        "openapi": {
+          "url": "/documentation/json",
+          "prefix": "/import-db"
+        }
+      }
+    ],
+    "refreshTimeout": 1000
+  },
+  "watch": true
+}

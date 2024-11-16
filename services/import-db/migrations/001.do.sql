@@ -1,0 +1,11 @@
+CREATE TABLE file (
+  id INTEGER PRIMARY KEY NOT NULL,
+  `name` VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE file_extraction (
+  id INTEGER PRIMARY KEY NOT NULL,
+  `file_id` INTEGER NOT NULL,
+  `content` TEXT NOT NULL DEFAULT "",
+  FOREIGN KEY (`file_id`) REFERENCES file (`id`)
+);
