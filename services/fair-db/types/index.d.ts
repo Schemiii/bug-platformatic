@@ -1,7 +1,7 @@
-import { Movie } from './Movie'
+import { Product } from './Product'
   
 interface EntityTypes  {
-  Movie: Movie
+  Product: Product
 }
   
-export { EntityTypes, Movie }
+export { EntityTypes, Product }

@@ -65,7 +65,7 @@
   },
   {
     "schema": null,
-    "table": "movies",
+    "table": "product",
     "constraints": [
       {
         "column_name": "id",
@@ -88,13 +88,13 @@
       },
       {
         "cid": 1,
-        "name": "title",
+        "name": "description",
         "type": "TEXT",
         "notnull": 1,
-        "dflt_value": null,
+        "dflt_value": "''",
         "pk": 0,
         "hidden": 0,
-        "column_name": "title",
+        "column_name": "description",
         "udt_name": "text",
         "is_nullable": "NO",
         "is_generated": "NO"
